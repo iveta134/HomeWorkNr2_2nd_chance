@@ -18,8 +18,7 @@ header {
     grid-template-rows: 60% 40%;
     grid-template-areas:
     "logo logo"
-    "nav tools"
-
+    "nav tools";
 }
 
 .logo-cont {
@@ -28,27 +27,24 @@ header {
 
 .header-tools {
     grid-area: tools;
+    font-size: 1rem;
 }
 
 .global-nav {
     grid-area: nav;
     box-sizing: border-box;
     width: 100%;
-
-
 }
+
 .ul-navlist {
     box-sizing: border-box;
     width: 100%;
 }
 
 .dreamteam-name {
-    
-    font-size: 1rem;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    
-    
+    font-size: 1rem;    
 }
+
 .dreamteam-logo {
     width: 70px;
     height: 70px;
@@ -81,19 +77,21 @@ header {
 }
 
 .button1 {
-    background-color: #2b32ad;
+    background-image: linear-gradient(to right, #16A085 0%, #F4D03F 51%, #16A085 100%);
+    /* background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%); /..zilais tonis */
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 4px 2px;
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
+
 .button1:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
@@ -132,6 +130,9 @@ main {
     box-sizing: border-box;
     width: 100%;
     text-align: center;
+}
+p {
+    font-size: 1rem;
 }
 
 @media (min-width: 576px) {
@@ -211,6 +212,9 @@ main {
     width: 100%;
     text-align: center;
     }
+    p {
+        font-size: 1.4rem;
+    }
 }
 
 @media (min-width: 992px) {
@@ -218,7 +222,7 @@ main {
         display: grid;
         grid-template-columns: 25% 25% 25 25%;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         box-sizing: border-box;
         width: 100%;
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -245,6 +249,10 @@ main {
             "hero hero heroact ad"
             "main mainli mainli sideb"
             "footer footer footer footer";
+        text-align: center;
+        font-size: 1.6rem;
+        box-sizing: border-box;
+        width: 100%;
     }
     
     .hero-cont {
@@ -266,7 +274,8 @@ main {
     }
     .footer-cont {
         grid-area: footer;
-        
+        font-size: 1rem;
+        padding-top: 15px;
     }
     .main-article {
         grid-area: main;
@@ -277,5 +286,8 @@ main {
     .sidebar {
         display: inline;
         grid-area: sideb;
+    }
+    p {
+        font-size: 1.8rem;
     }
 }
